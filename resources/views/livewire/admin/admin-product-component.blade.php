@@ -12,7 +12,14 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    All Products
+                    <div class="row">
+                        <div class="col-md-6">
+                            All Products
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{route('admin.addproduct')}}" class="btn btn-success pull-right">Add New</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="panel-body"></div>
                 <table class="table table-striped">
@@ -38,7 +45,9 @@
                             <td>{{$product->regular_price}}</td>
                             <td>{{$product->category->name}}</td>
                             <td>{{$product->created_at}}</td>
-                            <td></td>
+                            <td>
+                                <a href="{{route('admin.editproduct',['product_slug'=>$product->slug])}}"><i class="fa fa-edit fa-2x text-info"></i></a>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
