@@ -27,10 +27,10 @@
                         <div class="product-name">
                             <a class="link-to-product" href="{{route('product.details',['slug'=>$item->model->slug])}}">{{$item->model->name}}</a>
                         </div>
-                        <div class="price-field produtc-price"><p class="price">${{$item->model->regular_price}}</p></div>
+                        <div class="price-field product-price"><p class="price">${{$item->model->regular_price}}</p></div>
                         <div class="quantity">
                             <div class="quantity-input">
-                                <input type="text" name="product-quatity" value="{{$item->qty}}" data-max="120" pattern="[0-9]*" >
+                                <input type="text" name="product-quantity" value="{{$item->qty}}" data-max="120" pattern="[0-9]*" >
                                 <a class="btn btn-increase" href="#" wire:click.prevent="increaseQuantity('{{$item->rowId}}')"></a>
                                 <a class="btn btn-reduce" href="#" wire:click.prevent="decreaseQuantity('{{$item->rowId}}')"></a>
                             </div>

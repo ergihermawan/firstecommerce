@@ -1,7 +1,5 @@
 	<main id="main" class="main-site left-sidebar">
-
 		<div class="container">
-
 			<div class="wrap-breadcrumb">
 				<ul>
 					<li class="item-link"><a href="#" class="link">home</a></li>
@@ -95,7 +93,7 @@
 										<a href="#" class="btn add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">Add To Cart</a>
                                         <div class="product-wish">
                                             @if ($witems->contains($product->id))
-                                                <a href="#"><i class="fa fa-heart fill-heart"></i></a>
+                                                <a href="#" wire:click.prevent="removeFromWishlist({{$product->id}})"><i class="fa fa-heart fill-heart"></i></a>
                                             @else
                                                 <a href="#" wire:click.prevent="addToWishlist({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fa fa-heart"></i></a>
                                             @endif
