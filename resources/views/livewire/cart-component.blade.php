@@ -70,7 +70,7 @@
                     <a class="btn btn-update" href="#">Update Shopping Cart</a>
                 </div>
             </div>
-            
+
             <div class="wrap-iten-in-cart">
                 <h3 class="title-box" style="border-bottom: 1px solid; padding-bottom:15px;">{{Cart::instance('saveForLater')->count()}} item(s) Saved For Later</h3>
                 @if (Session::has('s_success_message'))

@@ -63,14 +63,20 @@ class CartComponent extends Component
 
     public function checkout()
     {
-        if (Auth::check())
-        {
+        if (Auth::check()) {
             return redirect()->route('checkout');
+        } else {
+            return redirect()->route('Login');
         }
-        else
-        {
-            return redirect()->route('login');
-        }
+    }
+
+    public function setAmountForCheckout()
+    {
+        session()->put('checkout', [
+            'subtotal' => Cart::instance('cart')->subtotal(),
+            'tax' => Cart::instance('cart')->tax(),
+            'total' => Cart::instance('cart')->total(),
+        ]);
     }
 
 
@@ -78,6 +84,7 @@ class CartComponent extends Component
 
     public function render()
     {
+        $this->setAmountForCheckout();
         return view('livewire.cart-component')->layout("layouts.base");
     }
 }
