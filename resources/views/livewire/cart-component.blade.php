@@ -8,7 +8,6 @@
         </div>
         <div class=" main-content-area">
             @if(Cart::instance('cart')->count() > 0)
-
             <div class="wrap-iten-in-cart">
                 @if (Session::has('success_message'))
                     <div class="alert alert-success">
@@ -49,7 +48,6 @@
                     <p>No item in Cart</p>
                 @endif
             </div>
-
             <div class="summary">
                 <div class="order-summary">
                     <h4 class="title-box">Order Summary</h4>
