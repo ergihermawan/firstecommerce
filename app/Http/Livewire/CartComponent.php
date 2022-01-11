@@ -66,12 +66,16 @@ class CartComponent extends Component
         if (Auth::check()) {
             return redirect()->route('checkout');
         } else {
-            return redirect()->route('Login');
+            return redirect()->route('login');
         }
     }
 
     public function setAmountForCheckout()
     {
+        if (!Cart::instance('cart')->count() > 0) {
+            session()->forget('checkout');
+            return;
+        }
         session()->put('checkout', [
             'subtotal' => Cart::instance('cart')->subtotal(),
             'tax' => Cart::instance('cart')->tax(),
