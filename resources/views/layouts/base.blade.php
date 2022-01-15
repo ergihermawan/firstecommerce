@@ -113,6 +113,9 @@
 												<li class="menu-item" >
 													<a title="Dashboard" href="{{route('user.dashboard')}}">Dashboard</a>
 												</li>
+                                                <li class="menu-item" >
+													<a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
+												</li>
 												<li class="menu-item">
 													<a href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 												</li>
@@ -259,7 +262,7 @@
 										<ul>
 											<li>
 												<i class="fa fa-map-marker" aria-hidden="true"></i>
-												<p class="contact-txt">45 Grand Central Terminal New York,NY 1017 United State USA</p>
+												<p class="contact-txt">Mall Sentra Grosir Cikarang, Bekasi, Jawa Barat</p>
 											</li>
 											<li>
 												<i class="fa fa-phone" aria-hidden="true"></i>
@@ -267,7 +270,7 @@
 											</li>
 											<li>
 												<i class="fa fa-envelope" aria-hidden="true"></i>
-												<p class="contact-txt">Contact@yourcompany.com</p>
+												<p class="contact-txt">lapakpedia@company.com</p>
 											</li>
 										</ul>
 									</div>
@@ -281,8 +284,8 @@
 								<h3 class="item-header">Hot Line</h3>
 								<div class="item-content">
 									<div class="wrap-hotline-footer">
-										<span class="desc">Call Us toll Free</span>
-										<b class="phone-number">(+123) 456 789 - (+123) 666 888</b>
+										<span class="desc">Customer Service</span>
+										<b class="phone-number">(+62) 124 987 2256 - (+62) 555 777</b>
 									</div>
 								</div>
 							</div>
