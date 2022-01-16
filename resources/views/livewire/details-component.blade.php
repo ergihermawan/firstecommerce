@@ -50,10 +50,10 @@
                         @if ($product->sale_price > 0 && $sale->status == 1 && $sale->sale_date > Carbon\Carbon::now())
                             <div class="wrap-price">
                                 <span class="product-price">${{$product->sale_price}}</span>
-                                <del><span class="product-price regprice">${{$product->regular_price}}</span></del>
+                                <del><span class="product-price regprice">Rp{{$product->regular_price}}</span></del>
                             </div>
                         @else
-                            <div class="wrap-price"><span class="product-price">${{$product->regular_price}}</span></div>
+                            <div class="wrap-price"><span class="product-price">Rp{{$product->regular_price}}</span></div>
                         @endif
                         <div class="stock-info in-stock">
                             <p class="availability">Availability: <b>{{$product->stock_status}}</b></p>
@@ -194,7 +194,7 @@
                                     <i class="fa fa-truck" aria-hidden="true"></i>
                                     <div class="right-content">
                                         <b class="title">Free Shipping</b>
-                                        <span class="subtitle">On Oder Over $99</span>
+                                        <span class="subtitle">On Oder Over Rp99</span>
                                         <p class="desc">Lorem Ipsum is simply dummy text of the printing...</p>
                                     </div>
                                 </a>
@@ -269,7 +269,7 @@
                                 </div>
                                 <div class="product-info">
                                     <a href="{{route('product.details',['slug'=>$r_product->slug])}}" class="product-name"><span>{{$r_product->name}}</span></a>
-                                    <div class="wrap-price"><span class="product-price">${{$r_product->regular_price}}</span></div>
+                                    <div class="wrap-price"><span class="product-price">Rp{{$r_product->regular_price}}</span></div>
                                 </div>
                             </div>
                             @endforeach

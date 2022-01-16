@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
+	<title>LapakPedia</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
@@ -42,7 +42,7 @@
 						<div class="topbar-menu left-menu">
 							<ul>
 								<li class="menu-item" >
-									<a title="Hotline: (+123) 456 789" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
+									<a title="Hotline: (+62) 124 987 2256" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+62) 124 987 2256</a>
 								</li>
 							</ul>
 						</div>
@@ -61,10 +61,7 @@
 									<a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
-											<a title="Pound (GBP)" href="#">Pound (GBP)</a>
-										</li>
-										<li class="menu-item" >
-											<a title="Euro (EUR)" href="#">Euro (EUR)</a>
+											<a title="Euro (EUR)" href="#">Rupiah (Rp)</a>
 										</li>
 										<li class="menu-item" >
 											<a title="Dollar (USD)" href="#">Dollar (USD)</a>
@@ -115,6 +112,9 @@
 												</li>
                                                 <li class="menu-item" >
 													<a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
+												</li>
+                                                <li class="menu-item" >
+													<a title="Change Password" href="{{route('user.changepassword')}}">Change Password</a>
 												</li>
 												<li class="menu-item">
 													<a href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>

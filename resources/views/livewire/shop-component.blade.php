@@ -150,7 +150,7 @@
 					</div><!-- brand widget-->
 
 					<div class="widget mercado-widget filter-widget price-filter">
-						<h2 class="widget-title">Price <span class="text-info">${{$min_price}} - {{$max_price}}</span></h2>
+						<h2 class="widget-title">Price <span class="text-info">Rp{{$min_price}} - {{$max_price}}</span></h2>
 						<div class="widget-content" style="padding:10px 5px 40px 5px;">
                             <div id="slider" wire:ignore></div>
 
@@ -227,7 +227,7 @@
 										</div>
 										<div class="product-info">
 											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-											<div class="wrap-price"><span class="product-price">$168.00</span></div>
+											<div class="wrap-price"><span class="product-price">Rp168.00</span></div>
 										</div>
 									</div>
 								</li>
@@ -241,7 +241,7 @@
 										</div>
 										<div class="product-info">
 											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-											<div class="wrap-price"><span class="product-price">$168.00</span></div>
+											<div class="wrap-price"><span class="product-price">Rp168.00</span></div>
 										</div>
 									</div>
 								</li>
