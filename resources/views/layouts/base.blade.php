@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LapakPedia</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-1.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
@@ -58,7 +58,7 @@
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
-									<a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="Dollar (USD)" href="#">Rupiah (Rp)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
 											<a title="Euro (EUR)" href="#">Rupiah (Rp)</a>
@@ -120,6 +120,9 @@
 													<a title="My Orders" href="{{route('user.orders')}}">My Orders</a>
 												</li>
                                                 <li class="menu-item" >
+													<a title="My Profile" href="{{route('user.profile')}}">My Profile</a>
+												</li>
+                                                <li class="menu-item" >
 													<a title="Change Password" href="{{route('user.changepassword')}}">Change Password</a>
 												</li>
 												<li class="menu-item">
@@ -144,17 +147,16 @@
 				<div class="container">
 					<div class="mid-section main-info-area">
 
+                        {{-- Logo kiri atas --}}
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-1.png')}}" alt="mercado"></a>
+							<a href="index.html" class="link-to-home"><img src="{{ asset('assets/images/logo-top-4.png')}}" alt="mercado"></a>
 						</div>
 
 						@livewire('header-search-component')
 
 						<div class="wrap-icon right-section">
 							@livewire('wishlist-count-component')
-
 							@livewire('cart-count-component')
-
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="#" class="mobile-navigation">
 									<span></span>
@@ -163,7 +165,6 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 

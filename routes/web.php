@@ -33,6 +33,7 @@ use App\Http\Livewire\User\UserChangePasswordComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\User\UserOrderDetailComponent;
 use App\Http\Livewire\User\UserOrdersComponent;
+use App\Http\Livewire\User\UserProfileComponent;
 use App\Http\Livewire\WishlistComponent;
 use Illuminate\Support\Facades\Route;
 
@@ -80,6 +81,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/user/orders', UserOrdersComponent::class)->name('user.orders');
     Route::get('/user/orders/{order_id}', UserOrderDetailComponent::class)->name('user.orderdetails');
     Route::get('/user/change-password', UserChangePasswordComponent::class)->name('user.changepassword');
+    Route::get('/user/profile', UserProfileComponent::class)->name('user.profile');
 });
 
 // For Admin
