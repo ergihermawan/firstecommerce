@@ -22,12 +22,12 @@
         <div class="wrap-banner style-twin-default">
             <div class="banner-item">
                 <a href="#" class="link-banner banner-effect-1">
-                    <figure><img src="{{ asset('assets/images/home-1-banner-1.jpg') }}" alt="" width="580" height="190"></figure>
+                    <figure><img src="{{ asset('assets/images/home-banner-1.jpg') }}" alt="" width="580" height="190"></figure>
                 </a>
             </div>
             <div class="banner-item">
                 <a href="#" class="link-banner banner-effect-1">
-                    <figure><img src="{{ asset('assets/images/home-1-banner-2.jpg') }}" alt="" width="580" height="190"></figure>
+                    <figure><img src="{{ asset('assets/images/home-banner-2.jpg') }}" alt="" width="580" height="190"></figure>
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@
             <h3 class="title-box">Latest Products</h3>
             <div class="wrap-top-banner">
                 <a href="#" class="link-banner banner-effect-2">
-                    <figure><img src="{{ asset('assets/images/digital-electronic-banner.jpg') }}" width="1170" height="240" alt=""></figure>
+                    <figure><img src="{{ asset('assets/images/bundle.jpg') }}" width="1170" height="240" alt=""></figure>
                 </a>
             </div>
             <div class="wrap-products">
@@ -96,7 +96,7 @@
             <h3 class="title-box">Product Categories</h3>
             <div class="wrap-top-banner">
                 <a href="#" class="link-banner banner-effect-2">
-                    <figure><img src="{{ asset('assets/images/fashion-accesories-banner.jpg') }}" width="1170" height="240" alt=""></figure>
+                    <figure><img src="{{ asset('assets/images/fashion-accesories.jpg') }}" width="1170" height="240" alt=""></figure>
                 </a>
             </div>
             <div class="wrap-products">

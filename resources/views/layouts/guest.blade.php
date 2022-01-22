@@ -312,7 +312,7 @@
 											</li>
 											<li>
 												<i class="fa fa-envelope" aria-hidden="true"></i>
-												<p class="contact-txt">Contact@yourcompany.com</p>
+												<p class="contact-txt">lapakpedia.com</p>
 											</li>
 										</ul>
 									</div>
