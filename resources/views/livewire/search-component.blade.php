@@ -5,7 +5,7 @@
         <div class="wrap-breadcrumb">
             <ul>
                 <li class="item-link"><a href="#" class="link">home</a></li>
-                <li class="item-link"><span>Digital & Electronics</span></li>
+                <li class="item-link"><span>Seni</span></li>
             </ul>
         </div>
         <div class="row">
@@ -14,13 +14,13 @@
 
                 <div class="banner-shop">
                     <a href="#" class="banner-link">
-                        <figure><img src="{{ asset('assets/images/shop-banner.jpg') }}" alt=""></figure>
+                        <figure><img src="{{ asset('assets/images/banner.jpg') }}" alt=""></figure>
                     </a>
                 </div>
 
                 <div class="wrap-shop-control">
 
-                    <h1 class="shop-title">Digital & Electronics</h1>
+                    <h1 class="shop-title">Seni</h1>
 
                     <div class="wrap-right">
 
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="product-info">
                                     <a href="{{route('product.details',['slug'=>$product->slug])}}" class="product-name"><span>{{$product->name}}</span></a>
-                                    <div class="wrap-price"><span class="product-price">${{$product->regular_price}}</span></div>
+                                    <div class="wrap-price"><span class="product-price">Rp{{$product->regular_price}}</span></div>
                                     <a href="#" class="btn add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">Add To Cart</a>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                     </div>
                 </div><!-- Categories widget-->
 
-                <div class="widget mercado-widget filter-widget brand-widget">
+                {{-- <div class="widget mercado-widget filter-widget brand-widget">
                     <h2 class="widget-title">Brand</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list list-limited" data-show="6">
@@ -121,7 +121,7 @@
                             <li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                </div><!-- brand widget-->
+                </div><!-- brand widget--> --}}
 
                 <div class="widget mercado-widget filter-widget price-filter">
                     <h2 class="widget-title">Price</h2>
@@ -135,7 +135,7 @@
                     </div>
                 </div><!-- Price-->
 
-                <div class="widget mercado-widget filter-widget">
+                {{-- <div class="widget mercado-widget filter-widget">
                     <h2 class="widget-title">Color</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list has-count-index">
@@ -147,9 +147,9 @@
                             <li class="list-item"><a class="filter-link " href="#">Pink <span>(29)</span></a></li>
                         </ul>
                     </div>
-                </div><!-- Color -->
+                </div><!-- Color --> --}}
 
-                <div class="widget mercado-widget filter-widget">
+                {{-- <div class="widget mercado-widget filter-widget">
                     <h2 class="widget-title">Size</h2>
                     <div class="widget-content">
                         <ul class="list-style inline-round ">
@@ -162,7 +162,7 @@
                             <figure><img src="{{ asset('assets/images/size-banner-widget.jpg') }}" width="270" height="331" alt=""></figure>
                         </div>
                     </div>
-                </div><!-- Size -->
+                </div><!-- Size --> --}}
 
                 <div class="widget mercado-widget widget-product">
                     <h2 class="widget-title">Popular Products</h2>
@@ -177,7 +177,7 @@
                                     </div>
                                     <div class="product-info">
                                         <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                        <div class="wrap-price"><span class="product-price">$168.00</span></div>
+                                        <div class="wrap-price"><span class="product-price">Rp168.00</span></div>
                                     </div>
                                 </div>
                             </li>
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="product-info">
                                         <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                        <div class="wrap-price"><span class="product-price">$168.00</span></div>
+                                        <div class="wrap-price"><span class="product-price">Rp168.00</span></div>
                                     </div>
                                 </div>
                             </li>
@@ -205,7 +205,7 @@
                                     </div>
                                     <div class="product-info">
                                         <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                        <div class="wrap-price"><span class="product-price">$168.00</span></div>
+                                        <div class="wrap-price"><span class="product-price">Rp168.00</span></div>
                                     </div>
                                 </div>
                             </li>
@@ -219,7 +219,7 @@
                                     </div>
                                     <div class="product-info">
                                         <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                        <div class="wrap-price"><span class="product-price">$168.00</span></div>
+                                        <div class="wrap-price"><span class="product-price">Rp168.00</span></div>
                                     </div>
                                 </div>
                             </li>

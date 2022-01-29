@@ -2,7 +2,7 @@
     <footer id="footer">
 		<div class="wrap-footer-content footer-style-1">
 
-			<div class="wrap-function-info">
+			{{-- <div class="wrap-function-info">
 				<div class="container">
 					<ul>
 						<li class="fc-info-item">
@@ -39,7 +39,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> --}}
 			<!--End function info-->
 
 			<div class="main-footer-content">
@@ -183,9 +183,9 @@
 				<div class="wrap-back-link">
 					<div class="container">
 						<div class="back-link-box">
-							<h3 class="backlink-title">Quick Links</h3>
+							{{-- <h3 class="backlink-title">Quick Links</h3>
 							<div class="back-link-row">
-								<ul class="list-back-link" >
+								{{-- <ul class="list-back-link" >
 									<li><span class="row-title">Mobiles:</span></li>
 									<li><a href="#" class="redirect-back-link" title="mobile">Mobiles</a></li>
 									<li><a href="#" class="redirect-back-link" title="yphones">YPhones</a></li>
@@ -223,7 +223,7 @@
 									<li><a href="#" class="redirect-back-link" title="Loose Diamond Shoes" >Loose Diamond Shoes</a></li>
 									<li><a href="#" class="redirect-back-link" title="BootsMen Watches" >BootsMen Watches</a></li>
 									<li><a href="#" class="redirect-back-link" title="Women Watches" >Women Watches</a></li>
-								</ul>
+								</ul> --}}
 
 							</div>
 						</div>
